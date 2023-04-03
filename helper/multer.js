@@ -4,7 +4,7 @@ const fs = require("fs");
 
 /** code to configure user upload profile image starts */
 const userUploadDirPath = path.join(
-  __dirname,"..","/public/user-profile"
+  __dirname,"..","/public/Documents"
 );
 
 let userImageStorage = multer.diskStorage({

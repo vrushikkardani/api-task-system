@@ -13,7 +13,7 @@ module.exports = {
     create:async(req,res,next) => {
         try {
             if (req.files != undefined && req.files.Documents != undefined ) {
-                req.body.Documents =  "/user-profile/" + req.files.Documents[0].filename;
+                req.body.Documents =  "/Documents/" + req.files.Documents[0].filename;
             }
             
             req.body.dob = moment(req.body.dob,'DD/MM/YYYY').format("YYYY-MM-DD");
@@ -66,7 +66,7 @@ module.exports = {
     update:async(req,res,next) => {
         try {
             if (req.files != undefined && req.files.Documents != undefined ) {
-                req.body.Documents =  "/user-profile/" + req.files.Documents[0].filename;
+                req.body.Documents =  "/Documents/" + req.files.Documents[0].filename;
             }
             let update = await Service.update(req.params.id,req.body);
             if(update){
