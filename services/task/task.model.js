@@ -27,7 +27,7 @@ const TaskSchema = new Schema (
             type:String,
             default:"",
         },
-        Allocate_Employe_Name:{
+        Allocate_Employe_Email_Id:{
             type:String,
             default:"",
         },
