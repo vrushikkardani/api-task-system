@@ -19,6 +19,14 @@ const TaskSchema = new Schema (
             type:String,
             default:"",
         },
+        Start_Time :{
+            type:String,
+            default:"",
+        },
+        End_Time :{
+            type:String,
+            default:"",
+        },
         Allocate_Employe_Name:{
             type:String,
             default:"",
