@@ -35,7 +35,7 @@ const TaskSchema = new Schema (
             type:String,
             default:"To Do",
         },
-        date:{
+        Date:{
             type:String,
             default:"",
         }
