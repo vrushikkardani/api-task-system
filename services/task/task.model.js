@@ -34,6 +34,10 @@ const TaskSchema = new Schema (
         Status:{
             type:String,
             default:"To Do",
+        },
+        date:{
+            type:String,
+            default:"",
         }
         
     },
